@@ -228,7 +228,7 @@ def find_images_with_similarity_score_greater_than(engine: sqlalchemy.Engine, si
         return result
 ```
 
-For more filtering, we will need an actual dataset with rich metadata to filter by. For this, we will utilize
+For more filtering, we will need an actual dataset with rich metadata to filter by. For this, we will utilize..............................g
 [Steam Games Dataset](https://huggingface.co/datasets/FronkonGames/steam-games-dataset). It is hosted on
 HuggingFace Hub, and we can download it with:
 ```python

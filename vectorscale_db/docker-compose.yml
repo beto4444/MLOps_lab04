@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  timescaledb:
+    image: timescale/timescaledb-ha:pg16
+    container_name: vectorscaledb
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: similarity_search_service_db
+    ports:
+      - "5557:5432"
+    volumes:
+      - ./vectorscaledb/initdb:/docker-entrypoint-initdb.d
+
